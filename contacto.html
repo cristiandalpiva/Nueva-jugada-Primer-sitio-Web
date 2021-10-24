@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto. Se parte de nuestra comunidad</title>
+
+  <link rel="stylesheet" type="text/css" href="stylesecciones.css" media="screen" />
+  <script type="text/javascript" src="funcionesFormulario.js"></script>
+  <link rel = "icon" href = "img/favicon.png">
+</head>
+
+<body>
+
+  <header>
+    <!--PRIMERA FILA: lOGOTIPO, CABECERA Y REDES SOCIALES-->
+    <div class="Fila1">
+      <div id="Logotipo">
+        <a href="index.html"><Img
+          src="img/NuevaJugada.png" alt="logonuevajugada"
+          height="100" alt="nuevajugadalogo"></a>
+
+      </div>
+
+ 
+
+      <div id="cabecera">
+        <img class="imagencabecera"
+        src="img/Unanuevamiradadeldeporte.png"
+          alt="Slogandeportistas">
+      </div>
+
+
+
+      <div id=RedesSociales>
+        <!--FACEBOOK-LOGO Y ENLACE-->
+        <a href=" https://www.facebook.com/NuevaJugadaTuSitio "> <img class="LogoF"
+          src="img/Facebooklogo.png"
+          alt="LogoFacebook"></a>
+
+       <!--INSTAGRAM-LOGO Y ENLACE-->
+        <a href="https://www.instagram.com/nuevajugadatusitio/">  <img class="LogoI"
+          src="img/instagram.png"
+          alt="instagramlogo.png"></a>
+
+      <!--TWITTER-LOGO Y ENLACE-->
+      <a href="https://twitter.com/nuevajugada">  <img class="LogoT"
+        src=" img/twitterlogo.png"
+          alt="twitter logo.png"></a>
+        
+      </div>
+    </div>
+
+
+  </header>
+
+
+  <!--SEGUNDA FILA. MENU (SECCIONES)-->
+
+
+    <div id="menu">
+        <div id="hazanias"> <a href="grandesHazañas.html">Grandes Hazañas</a></div>
+        <div id="mitos"> <a href="mitosDeportivos.html">Mitos Deportivos</a> </div>
+        <div id="curiosidades"> <a href="Curiosidades.html">Curiosidades</a></div>
+        <div id="cine"><a href="deporteEnElCine.html">Deporte en el cine</a></div>
+        <div id="videojuegos"> <a href="deporteEnLosVideojuegos.html"> Deporte en los videojuegos</a></div>
+        <div id="contacto"><a href="contacto.html">Contacto</a></div>
+      </div>
+      
+
+<!--Fila de cabecera de sección-->
+   
+      <div id="cabeceraSeccion">
+        <img class="imagenSeccion" src="img/contacto.png" alt="contacto">
+        </div>
+       
+
+    <!--TERCERA FILA. FRASE DE LA SEMANA, NOTA DESTACADA Y FORMULARIO DE REDES SOCIALES-->
+    <div class="Fila3">
+      <div id="momentoretro">
+        <p class="titmomentoretro">MOMENTO RETRO</p>
+        <img
+          src="img/maxipenal.jpg"
+          alt="maxipenal" width="200">
+        <img
+          src="img/penalesholanda.jpg"
+          alt="penalesholanda" width="200">
+        <P class="textoretro"> Maxi Rodriguez con su histórico penal mete a Argentina en la final de la Copa del Mundo
+          Brasil 2014</P>
+      </div>
+
+      <div id="formularioDeContacto">
+
+    <!--FORMULRIO DE CONTACTO-->
+      <form id="formularioContacto" style="width: 90%; display: block; margin: auto;"> 
+        <fieldset style="background-color:beige">
+        <legend style="font-weight: bold; color: rgb(44, 44, 129); font-size: large;">Datos personales </legend>
+        
+        
+        <label>Nombre*</label>
+        <Input id="nombre"> 
+        
+        <label>Apellido*</label> 
+        <Input id="apellido"> <br><br>
+        
+          <label>Fecha de Nacimiento*</label> 
+          <input class="field" id="dia" size="2"  maxlength="2" type="text" name="fecha" placeholder="Día">
+          <input class="field" id="mes" size="2" maxlength="2" type="text" name="fecha" placeholder="Mes"> 
+          <input class="field" id="anio" size="4" type="text" name="fecha" placeholder="Año">  <br> <br>
+
+        
+        <label>Celular*</label> 
+        <Input id="celular" placeholder="Por ej: 2996123459"> 
+        
+        <label>Email*</label> 
+        <Input id="email"> <br>
+        
+        </fieldset> <!--agrupa por campos el fieldset -->
+        <br>
+        
+        <fieldset  style="background-color:beige">
+        <legend style="font-weight: bold; color: rgb(44, 44, 129); font-size: large;">Newsletter </legend>
+        
+        <div>
+        <label>¿Te gustaría recibir las noticias más importantes?*</label> <br>
+        <label>Si</label>
+        <input  id="recibirNovedades" onclick="mostrarOpciones() "type="radio" name="recibirNoticias" value="Si">
+        <label>No</label>
+        <input id="recibirNovedades" onclick="mostrarOpciones() "type="radio" name="recibirNoticias" value="No"> <br> <br>
+      </div>
+      
+      <div id="mostrarMedios" style="display: none;">
+        <label>¿Por qué medios desea recibir las novedades?*</label> <br>
+        <label>Email</label>
+        <input id="medioNovedades" type="radio"  name="medioNovedades" value="medioEmail">
+        <label>Whatsapp</label>
+        <input id="medioNovedades"
+         type="radio"  name="medioNovedades" value="medioWhatsapp">  <br><br>
+        
+        <label>(Indica de qué secciones deseas recibir novedades sólo si deseas recibir de alguna en particular) </label> <br>
+        <label><input id="novedadesSecciones" type="checkbox">Curiosidades</label>
+        <label><input id="novedadesSecciones" type="checkbox">Deporte en el cine</label>
+        <label><input id="novedadesSecciones" type="checkbox">Deporte en los videojuegos</label>
+        <label><input id="novedadesSecciones" type="checkbox">Grandes hazañas</label>
+        <label><input id="novedadesSecciones" type="checkbox">Mitos deportivos</label> </div> <br>
+
+
+        <input type="button" value="Enviar Formulario" onclick="validarFormulario()">
+        </fieldset> </form>
+
+<br>
+
+      </div>
+      <div id="ContactoRedesSociales">
+
+        <div id="BotonesSociales">
+          <img
+            src="img/invitacionredessociales.png"
+            alt="seguirredessociales">
+          <iframe
+            src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FNuevaJugadaTuSitio%2F&width=200&layout=button&action=like&size=large&share=true&height=65&appId"
+            width="180" height="35" style="border:none;overflow:hidden" 
+          allow="encrypted-media"></iframe>
+
+          <a href="https://twitter.com/nuevajugada?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large"
+            data-lang="es" data-show-count="false">Follow @nuevajugada</a>
+          <script async src="https://platform.twitter.com/widgets.js"></script>
+
+        </div>
+      </div>
+    </div>
+
+    <!--CUARTA FILA. FRASE DE LA SEMANA, NOTA 1, NOTA 2 Y BUSCADOR-->
+    <div class="Fila4">
+      <div id="FraseDeLaSemana">
+        <p class="titfrase">FRASE DE LA SEMANA</p>
+        <img
+          src="img/michaeljordan.jpg"
+          alt="michaeljordan" width="220">
+
+          <p class="frase">"Siempre pensaba que habría alguna persona en la grada que era la primera vez que me veía jugar
+            en directo y simplemente no quería defraudar a esa persona ni a mis fans ni a mi equipo." (M.Jordan)</p>
+
+          </div>
+
+      <div id="formularioDeOpinion">
+
+          <!--FORMULRIO DE CONTACTO--> 
+<form id="formularioOpinion" style="width: 90%; display: block; margin: auto;">
+  
+        <fieldset  style="background-color:beige">
+          <label style="font-weight: bold; color: blue; font-size: large;">Danos tu opinión</label> <br> <br>
+                
+           <label> ¿Qué te interesa saber sobre los deportes?*</label> <br><br>
+           <label><input id="interesEnSaber" name="Intereses" type="checkbox">Momentos históricos</label>
+          <label><input id="interesEnSaber" name="Intereses" type="checkbox">Sus resultados</label>
+          <label><input id="interesEnSaber" name="Intereses"  type="checkbox">Datos Curiosos</label> <br>
+          <label><input id="interesEnSaber" name="Intereses" type="checkbox">Las anécdotas de sus protagonistas</label>
+          <label><input id="interesEnSaber" name="Intereses" type="checkbox">Historias de vida de los deportistas</label> <br><br>
+        
+        <label>Contanos que disciplinas te gustaría tuvieran más lugar en nuestro sitio* </label> <br> <br> 
+  
+           <div id="mencionarDiscipRezagadas">
+            <textarea id="mencionDisciplinasRezagadas" cols="100" rows="2"
+            style="width: 95%;" placeholder="Menciona esas disciplinas"></textarea></div>
+        
+        <div>
+            <p style="font-weight: 900;">Dejanos tus sugerencias y comentarios del sitio (Opcional)</p>
+            <textarea id="sugerencias" name="sugerencias" id="" cols="100" rows="2"
+            style="width: 95%;" placeholder="Tu opinión nos ayuda a crecer"></textarea> <br> </div> <br>
+            <input type="button" value="Enviar tu opinión" onclick="validarFormOpinion()">
+          </fieldset>
+              </form>
+            
+      </div>
+
+      <div class="FilmDelMes">
+       <p class="TitFilmDelMes">FILM DEL MES</p> <br>
+       <img src=" img/carrosdefuego.jpg" alt="carrosdefuego" width="180">
+      </div>
+    </div>
+
+
+    <!--Quinta sección-Autor de la pagina-->
+    <div class="Fila5">
+
+      <div class="PrimeraColumnaFooter"> 
+     
+        <div  class="QuienesSomos">
+          <img  class="LogoFooter" src="img/Logorojo.png" alt="LogoFooter">
+
+          <P class="cuerpoQuienesSomos">Nueva jugada es un sitio Web que pretender ser un espacio para todos los aficionados
+          del deporte. Esperamos puedas sentirte complacido de 
+          conocer grandes historias de distintas disciplinas.
+          </P>
+
+          <p>Copyright 2020</p>
+        
+        </div>
+
+        <div class="NuestrasRedes"> 
+
+       <p class="TitRedes">NUESTRAS REDES</p>
+       
+       <p class="cuerpoRedes">
+        Facebook: <a href="https://www.facebook.com/NuevaJugadaTuSitio ">NuevaJugada.TuSitio</a><br>
+     Twitter: <a href="https://twitter.com/nuevajugada">@nuevajugada</a> <br>
+   Instagram: <a href="https://www.instagram.com/nuevajugadatusitio/">@nuevaJugada</a>
+ </p> 
+       
+
+<img src="img/facebookblancoynegro4.png" alt="facebook" width="70">
+<img src="img/twitterlogoblancoynegro.png" alt="twitter" width="70">
+<img src="img/instagramblancoynegro.png" alt="instagramlogo" width="70">
+
+        </div>
+        
+        <div class="MapaDelSitio">
+          <p class="TitMapa">MAPA DEL SITIO</p>
+          <br>
+          
+          <div class="Columna1Mapa">
+           <a href="grandesHazañas.html"> <p>Grandes hazañas</p></a>
+           <a href="mitosDeportivos.html"> <p>Mitos Deportivos</p></a>
+           <a href="Curiosidades.html"> <p>Curiosidades</p></a>
+
+          </div>
+          <div class="Columna2Mapa">
+           <a href="deporteEnElCine.html"> <p>Deporte en el cine</p></a>
+           <a href="deporteEnLosVideojuegos.html"> <p>Deporte en los videojuegos</p></a>
+           <a href="contacto.html"> <p>Contacto</p> </a>
+          </div>
+         
+        
+
+          
+      
+      
+      </div>
+      
+
+    </div> 
+
+  </div>
+
+</body>
+
+</html> 
